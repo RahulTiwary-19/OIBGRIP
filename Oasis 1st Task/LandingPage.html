@@ -1,0 +1,323 @@
+<html>
+
+<title> Landing Page </title>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+    <style>
+        body{
+            background-image: url("bg1.jpg");
+        }
+        #navbarNav1{
+            margin-left: 15%;
+        }
+        .navbar1{
+            background-color: rgba(193, 111, 82, 0.864);
+            height:75px;
+            width: 100%;
+            border: 2px ;
+            position:fixed;
+            top: 0px;
+        }
+        .navbar-brand{
+          
+            font-family: "Sofia", sans-serif;
+        }
+        a.a1{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight:bold;
+            font-size: 20px;
+            color: black;
+            margin-left: 25px;
+            margin-right: 3px;
+            border-radius: 10pc;
+        }
+        a.a1:hover{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight:bold;
+            font-size: 20px;
+            color: rgb(31, 22, 12);
+            margin-left: 25px;
+            margin-right: 3px;
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+            border-radius: 10pc;
+            background-color: rgb(222, 102, 58);
+        }
+        .logo{
+            margin-left: 10px;
+            font-family: Brush Script MT,cursive;
+            font-size: 60px;
+            color: rgb(35, 3, 105);
+        }
+
+        .footer-clean {
+            padding:50px 0;
+            background-color:rgba(0, 0, 0, 0.8);
+            color: white;
+            
+        }
+
+        .footer-clean h3 {
+            margin-top:0;
+            margin-bottom:12px;
+            font-weight:bold;
+            font-size:16px;
+        }
+
+        .footer-clean ul {
+            padding:0;
+            list-style:none;
+            line-height:1.6;
+            font-size:14px;
+            margin-bottom:0;
+        }
+
+        .footer-clean ul a {
+            color:inherit;
+            text-decoration:none;
+            opacity:0.8;
+        }
+
+        .footer-clean ul a:hover {
+            opacity:1;
+        }
+
+        .footer-clean .item.social {
+            text-align:right;
+        }
+
+        @media (max-width:767px) {
+        .footer-clean .item {
+            text-align:center;
+            padding-bottom:20px;
+        }
+        }
+
+        @media (max-width: 768px) {
+        .footer-clean .item.social {
+            text-align:center;
+        }
+        }
+
+        .footer-clean .item.social > a {
+            font-size:24px;
+            width:40px;
+            height:40px;
+            line-height:40px;
+            display:inline-block;
+            text-align:center;
+            border-radius:50%;
+            border:1px solid #ccc;
+            margin-left:10px;
+            margin-top:22px;
+            color:inherit;
+            opacity:0.75;
+        }
+
+        .footer-clean .item.social > a:hover {
+        opacity:0.9;
+        }
+
+        @media (max-width:991px) {
+        .footer-clean .item.social > a {
+            margin-top:40px;
+        }
+        }
+
+        @media (max-width:767px) {
+        .footer-clean .item.social > a {
+            margin-top:10px;
+        }
+        }
+
+        .footer-clean .copyright {
+        margin-top:14px;
+        margin-bottom:0;
+        font-size:13px;
+        opacity:0.6;
+        }
+
+        .image-grid {
+        --gap: 16px;
+        --num-cols: 4;
+        --row-height: 300px;
+    
+        box-sizing: border-box;
+        padding: var(--gap);
+    
+        display: grid;
+        grid-template-columns: repeat(var(--num-cols), 1fr);
+        grid-auto-rows: var(--row-height);
+        gap: var(--gap);
+        }
+        
+        .image-grid > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 4px solid black;
+        }
+        
+        .image-grid-col-2 {
+            grid-column: span 2;
+        }
+        
+        .image-grid-row-2 {
+            grid-row: span 2;
+        }
+        
+        /* Anything udner 1024px */
+        @media screen and (max-width: 1024px) {
+            .image-grid {
+            --num-cols: 2;
+            --row-height: 200px;
+            }
+        }
+        .l1{
+            margin-left: 10px;
+            height: 75px;
+            width: 100px;
+        }
+        .s1{
+            margin-top: 75px;
+            align-items: center;
+            height: 80%;
+            width: 103%;
+            background-color: rgba(240, 241, 243, 0.4);
+        }
+        .x1{
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .btn1{
+            /* background-color: rgb(15, 86, 136); */
+            background-color: rgb(232, 106, 9);
+            padding: 2% 2%;
+            border-radius: 10pc;
+            border: 0px;
+            height: auto;
+            width: auto;
+            color: white;
+        }
+        .btn1:hover{
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        }
+        .l2{
+            border-left: 5px solid rgba(18, 4, 4);
+            
+        }
+        .x1{
+            margin-bottom: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar1 navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="logo"> RT Housing </div>
+          <img class = 'l1' src="logo1.png">
+  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav1">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link a1" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link a1" href="#">Buy & Rent</a>
+                  </li>
+  
+                    <li class="nav-item">
+                        <a class="nav-link a1" href="#">Hospitality</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link a1" href="#">Living</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link a1" href="#">Sell </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link a1" href="#">Home Loan </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link a1" href="#bottom">Contact Us</a>
+                    </li>
+                
+                </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- ------------------------------------------------------------------------------------------------------------------------ -->
+    <div class="s1 row">
+        <div class="col-md-6"> <center>
+            <div class="x1" >Make a World Class Property Yours !!</div>
+            <div> <input class="btn1" type="submit" value="Buy Or Rent a Property"></div></center>
+         </div>
+    
+    
+        <div class="col-md-6 l2"> <center>
+            <div class="x1">Sell Your World Class Property  !!</div>
+            <div> <input class="btn1" type="submit" value="Book Assessment of Property"></div></center>
+        </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------------------------ -->
+
+
+    <div class="footer-clean">
+        <footer>
+            <div class="container" id="bottom">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Buy a Flat</a></li>
+                            <li><a href="#">Sell A Flat</a></li>
+                            <li><a href="#">Rent a Flat</a></li>
+                            <li><a href="#">Home Loan</a> </li>
+                            <li><a href="#">View Property</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li>E-Mail us at :</li>
+                            <li>rtiwary@rthousing.com</li>
+                            <li>Call : +91 011-5738291 </li>
+                            <li>Connect with us on Social Media</li>
+                            <li>Tap on the icons</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About Us : </h3>
+                        <ul>
+                            <li>We provide fully furnished</li>
+                            <li>flats for our valuable customers</li>
+                            <li> to buy or rent !</li>
+                            <li>We also help our customers to </li>
+                            <li>sell  their property at best price !</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">RT_Housing © 2022</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+</body>
+</html>
